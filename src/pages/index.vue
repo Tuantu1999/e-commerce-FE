@@ -57,7 +57,6 @@ const items = [
     select-all
     pagination.sync="pagination"
     item-key="id"
-    loading="true"
     search="search"
   >
   </v-data-table>
