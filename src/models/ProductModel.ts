@@ -1,4 +1,4 @@
-import { AVAILABLE, SOLD } from "@/utils/constant";
+import { AVAILABLE, SOLD } from '@/utils/constant';
 
 export interface Products {
   id: string;
