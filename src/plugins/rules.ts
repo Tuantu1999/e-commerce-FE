@@ -12,14 +12,14 @@ export const rules = {
   email: (v: string) =>
     (v &&
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-        v.trim()
+        v.trim(),
       )) ||
     !v ||
     'Invalid email address',
 
   url: (v: string) =>
     new RegExp(/^(https?:\/\/)(www\.)?(?!www\.)(?!.*\/\/)([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\.)+[a-zA-Z]{2,}(\/.*)?$/).test(
-      v
+      v,
     ) ||
     !v ||
     'Invalid URL',
@@ -54,9 +54,9 @@ export const rules = {
   positiveInterger: (input: number) => {
     if (!toNumber(input) || toNumber(input) <= 0) return 'This is required field'
     return /^\d+$/gi.test(`${input}`.trim()) || 'Must be a positive integer'
-  }
+  },
 }
 
 export const appRules = {
-  name: [rules.required, rules.maxLength(250)]
+  name: [rules.required, rules.maxLength(250)],
 }

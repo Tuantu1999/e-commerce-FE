@@ -1,4 +1,4 @@
-import { SOLD, AVAILABLE } from "@/utils/constant";
+import { AVAILABLE, SOLD } from "@/utils/constant";
 
 export interface Products {
   id: string;
@@ -11,7 +11,7 @@ export interface Products {
   imageUrl: string;
   stock: number;
   category: string;
-  status: "SOLD" | "AVAILABLE";
+  status: typeof SOLD | typeof AVAILABLE;
   tags?: string[];
   quantity: number;
 }

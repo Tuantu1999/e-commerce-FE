@@ -1,4 +1,4 @@
-import type { Address } from "./AddressModel";
+import type { Address } from './AddressModel';
 
 export interface UserModel {
   id: string;
@@ -8,5 +8,5 @@ export interface UserModel {
   name: string;
   phone?: string;
   address?: Address;
-  role: "CUSTOMER" | "SALE" | "ADMIN";
+  role: 'CUSTOMER' | 'SALE' | 'ADMIN';
 }
