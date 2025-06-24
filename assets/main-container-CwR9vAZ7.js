@@ -1,1 +1,0 @@
-import{s as r,y as a}from"./index-pkr2UOBI.js";const s=(n,t)=>{const e=n.__vccOpts||n;for(const[c,o]of t)e[c]=o;return e},_={};function i(n,t){return a(),r("div",null,"main container")}const l=s(_,[["render",i]]);export{l as default};
